@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/background"
+        android:scaleType="matrix"/>
+    <LinearLayout
+        android:id="@+id/view_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/text_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="100dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="o"
+                android:textSize="40dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_weatherdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/text_windspeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind speed : 2.14 m /s"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
